@@ -1,0 +1,60 @@
+<!-- <div class="container"> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">UzbekStar.uz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="float-right">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Bosh sahifa <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mahsus bo'lim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Savol-javob bo'limi</a>
+        </li>
+        <li class="nav-item float-right">
+          <a class="nav-link" (click)="kirish()">Kirish</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Menyu tugadi! -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <h1 class="display-4">UzbekStar.uz</h1>
+    <p class="lead">Yangiliklar portali</p>
+  </div>
+</div>
+<!-- <div class="container"> -->
+<!-- Header qismi tugadi! -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card" style="width: 15rem;">
+        <div class="card-header">
+          Kategoriya
+        </div>
+        <div class="list-group">
+          <a (click)="itYangilik()" class="list-group-item list-group-item-action">IT yangiliklari</a>
+          <a class="list-group-item list-group-item-action">Iqtisodiyot</a>
+          <a class="list-group-item list-group-item-action">Jahon yangiliklari</a>
+          <a class="list-group-item list-group-item-action">Texnologiya yangiliklari</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="card p-3 mb-2" *ngFor="let post of posts">
+        <h3> {{ post.title }} </h3>
+        <p>{{ post.body }} </p>
+        <button class="btn btn-primary batafsil">BATAFSIL</button>
+      </div>
+    </div>
+  </div>
+</div>

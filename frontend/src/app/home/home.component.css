@@ -1,0 +1,14 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.jumbotron {
+    background-image: url('/assets/img103.png');
+    height: 450px;
+    padding: 15%;
+    text-shadow: 0px 0px 10px #000000;
+    color: #ffffff; 
+}
+.batafsil {
+    width: 150px;
+}
